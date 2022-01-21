@@ -26,13 +26,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+Each of these have their own differences and function. With map, it returns a brand new array, which does not manipulate the original array, and it'll need a return statement. With reduce, it does not return a new array, it returns a single value and is usually used for multiplication/addition. With filter, it will filter data based on something that can be equated to either true or false, it'll return a new array and does not manipulate the original. A use case for map is to map an array of numbers to an array of square roots. A use case for reduce is to sum or multiply all the values of an array. A use case for filter is when we want to filter out an array with certain values.
+
 2. Explain the difference between a callback and a higher order function.
+
+The difference between a callback and a higher order function is that a callback function is a function that is passed into another function as an argument; while, a higher order function is a function that receives other functions.
 
 3. Explain what a closure is.
 
+A closure is when an inner function reaches out of its scope to grab a variable defined in an outer function. Closures are useful because they let us associate the data with a function that operates on that data.
+
 4. Describe the four principles of the 'this' keyword.
 
+The four principles of the 'this' keyword is window binding, implicit binding, explicit binding, and new binding. Window binding is when if we do not give 'this' any context, it will return the window, the global object in node or undefined in strict mode. Implicit binding applies to objects with methods, when the function is invoked, to the left of the dot is what 'this' refers to. Explicit binding is when we tell a function what the 'this' keyword should be using when we use .call, .apply or .bind. New binding is when the function is invoked with a new keyword that the 'this' keyword inside the function is bound to the new object being constructed.
+
 5. Why do we need super() in an extended class?
+
+We need super() in an extended class, because with extend it is used to create a child class of another class (parent) and with super(), it gets access to the parent's constructor method and properties.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
